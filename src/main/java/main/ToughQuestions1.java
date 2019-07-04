@@ -40,7 +40,13 @@ public class ToughQuestions1 {
            break;
            case 2: System.out.println("Enter the amount to be debited");
            debit = Integer.parseInt(br.readLine());
+           if(debit > bal)
+           {
+        	System.out.println("Insufficient Balance"); 
+           }
+           else {
            a.debit(debit);
+           }
            break;
            case 3:a.display();
            break;
